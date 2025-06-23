@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Data For Bar Chart (Exercise 2)' inline='true' name='federated.0hp8x4v0jfezo7195wota05g58st' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Exercise 2' name='excel-direct.0suhng91jgb6ib108uyk60mrn761'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='E:/Cuvette Data Science Program/Tablau/Exercise (3EX002)/Exercise 2.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0suhng91jgb6ib108uyk60mrn761' name='Data For Bar Chart' table='[&apos;Data For Bar Chart$&apos;]' type='table'>
+          <columns gridOrigin='A1:D892:no:A1:D892:0' header='yes' outcome='6'>
+            <column datatype='integer' name='PassengerId' ordinal='0' />
+            <column datatype='string' name='Passenger Name' ordinal='1' />
+            <column datatype='string' name='Embarked' ordinal='2' />
+            <column datatype='integer' name='Survived' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Data For Bar Chart]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D892:no:A1:D892:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PassengerId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PassengerId]</local-name>
+            <parent-name>[Data For Bar Chart]</parent-name>
+            <remote-alias>PassengerId</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Data For Bar Chart_1033476401A6463EADB1E0D496AF300D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passenger Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Passenger Name]</local-name>
+            <parent-name>[Data For Bar Chart]</parent-name>
+            <remote-alias>Passenger Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Data For Bar Chart_1033476401A6463EADB1E0D496AF300D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Embarked</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Embarked]</local-name>
+            <parent-name>[Data For Bar Chart]</parent-name>
+            <remote-alias>Embarked</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Data For Bar Chart_1033476401A6463EADB1E0D496AF300D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Survived</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Survived]</local-name>
+            <parent-name>[Data For Bar Chart]</parent-name>
+            <remote-alias>Survived</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Data For Bar Chart_1033476401A6463EADB1E0D496AF300D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Passenger Id' datatype='integer' name='[PassengerId]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[Survived]' role='dimension' type='ordinal' />
+      <column caption='Data For Bar Chart' datatype='table' name='[__tableau_internal_object_id__].[Data For Bar Chart_1033476401A6463EADB1E0D496AF300D]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/personal/AppData/Local/Temp/TableauTemp/#TableauTemp_076ozpn04pfeop19a599a12mkfx9.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/13/2025 07:33:53 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>PassengerId</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[PassengerId]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PassengerId</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Data For Bar Chart</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>891</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Data For Bar Chart_1033476401A6463EADB1E0D496AF300D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Passenger Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Passenger Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Passenger Name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Data For Bar Chart</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>891</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Data For Bar Chart_1033476401A6463EADB1E0D496AF300D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Embarked</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Embarked]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Embarked</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Data For Bar Chart</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Data For Bar Chart_1033476401A6463EADB1E0D496AF300D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Survived</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Survived]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Survived</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Data For Bar Chart</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Data For Bar Chart_1033476401A6463EADB1E0D496AF300D]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Data For Bar Chart' id='Data For Bar Chart_1033476401A6463EADB1E0D496AF300D'>
+            <properties context=''>
+              <relation connection='excel-direct.0suhng91jgb6ib108uyk60mrn761' name='Data For Bar Chart' table='[&apos;Data For Bar Chart$&apos;]' type='table'>
+                <columns gridOrigin='A1:D892:no:A1:D892:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='PassengerId' ordinal='0' />
+                  <column datatype='string' name='Passenger Name' ordinal='1' />
+                  <column datatype='string' name='Embarked' ordinal='2' />
+                  <column datatype='integer' name='Survived' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data For Bar Chart (Exercise 2)' name='federated.0hp8x4v0jfezo7195wota05g58st' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hp8x4v0jfezo7195wota05g58st'>
+            <column caption='Passenger Id' datatype='integer' name='[PassengerId]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Survived]' role='dimension' type='ordinal' />
+            <column-instance column='[Survived]' derivation='None' name='[none:Survived:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[PassengerId]' derivation='Sum' name='[sum:PassengerId:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0hp8x4v0jfezo7195wota05g58st].[sum:PassengerId:qk]</rows>
+        <cols>[federated.0hp8x4v0jfezo7195wota05g58st].[none:Survived:ok]</cols>
+      </table>
+      <simple-id uuid='{8BED9477-5C0C-42E2-9E28-E5E7BC98555C}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0hp8x4v0jfezo7195wota05g58st].[none:Survived:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{625F8B00-AABE-4095-B569-9C66E35EED7D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='190'>
+      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
+      Cl+MpPDFSApfjKTwxUgKX4yk8MVICl+MpPDFSApfjKTwxUgKX4yk8MVICl+MpPDFSApfjKTw
+      xUgKX4yk8MVICl+MpPDFSApfjKTwxUgKX4yk8MVICl+MpPDFSApfjKTwxUgKX4yk8MVICl+M
+      pPDFSApfjKTwxUgKX4yk8MVICl+MpPDFSApfjKTwxUgKX4yk8MVICl+MpPDFSApfjKTwxUgK
+      X4yk8MVICl+MpPDFSApfjKTwxUgKX4yk8MVIPp6ewIW01VdSXLCRik+bOesbxKjJs8lJjSIQ
+      ABtHStayZvvHtFgGcfN9jzH7jggsADhoKC9k9SsVNDj8uXbSo8xLj+08rpqCAsjOjuu8Siv7
+      C5/l/fiFPBTb3xPLFA/w4jv+forXHmB4+iJ+k59P3q+fYuxn6yk51PFua3UxfzhxGwt/m0/e
+      8lkM3ZvPluOdh9aVsm5nCLOW55H/24XccaqIondbXV7FVr2BTb7pPKjojeLF4ceS8XQWE0aE
+      0B+w+A1lQkIkLa0Arewra2DS9AmE9wdL8EhS06J5v+oYAMf2VnJdWiojgy3QP5wJ05NprtxH
+      j/Rt1RRvD2FmekznfynEFF4cvgWLc422I5T81Z/4GIAv+ZJoRoQ6jR41miENjTiAr06HcsMI
+      p4NDRzPG5xSNXc5v470NWwl5IJXhqt44Xr3H7+Cg6fAWXtwC03IyifIDOMuZfv74Ow+zWLDU
+      1XKSM5w544+/n/Ob/bDUf0E9EAFQsZacCvAbn8tKF9Xb7XaXM2lubnbTmrzDlbaeS+Hl4bfx
+      2bZ1/Ikp5Mw//6EWwJcBX7fQ4jzU4cAxJJwwBlA3oKVjS/RN/F/jCB9M+PmX8XPIz46mfM0y
+      Xj10IxkxXeMPCAjoMRO73U5QUJD7luYFrrT1XAov3upA466X2BGeyewU5+gBruEaPuao097F
+      8dFB6gaFYgGuDmnkk6MOpxMd5ED7QEK7nCOQhIcfpGVjIdW2XlyEeCUvDv8Qf9kfxbSxwS4+
+      ePpx64RBvF1cRn0bOJoOU7L5Y26xDgdgeOI4jm8u4XCTA9rqKSsuJWjcrfh1P01gHFmPDGbr
+      +nLUvlm8d6tz8jiffvg6P8/5vy7fHpa2lMUpQ/CLm87MmrWsePJlWiyDiM+YR9Z1nYOGJPNo
+      UiGrF+XS4PAnespc5ozvkT0AlogUsm5YyZptkSxIidDTHUNcde7cuXOenkRfYLfbXe79z0td
+      WPw9zsY9SlZM9/QUPMaLtzoivUfhi5EUvhhJ4YuRFL4YSeGLkRS+GEnhi5EUvhhJ4YuRFL4Y
+      SeGLkRS+GEnhi5EUvhhJ4YuRFL4YSeGLkRS+GEnhi5EUvhhJ4YuRFL4YSeGLkRS+GEnhi5EU
+      vhhJ4YuRFL4YSeGLkRS+GEnhi5EUvhhJ4YuRFL4YSeGLkRS+GEnhi5EUvhhJ4YuRFL4YSeGL
+      kRS+GEnhi5EUvhhJ4YuRFL4YSeGLkRS+GEnhi5EUvhhJ4YuRFL4YSeGLkRS+GEnhi5EUvhhJ
+      4YuRFL4YSeGLkRS+GEnhi5F83HeqszQ1NHH2gmN8CR4UjK/7LipyWdwY/jusums+f77gmKn8
+      pmopE913UZHL4sbwJ7K0qoqlANRQNON/CVu3irsDO95tr3iG7MppJF7CGR2ttXy48w127f0b
+      P7jvObLjnN+tpiBnLRVO3xmWtpTFKUMABw3lhax+pYIGhz/XTnqUeemxBJ4/rgCyvzlZK/sL
+      n+X9+IU8FNv/8pYufY4bw3dWw9GPfsDwQKcLxSdy/ZOvU/FY7EXGX8eOdX/kdMJD5KS1saH7
+      2yfraUiYS37WTS4OLWXdzhBmLc9jpP8pyn6/iqJ3l5I73q/HUFv1Bjb5pvO0or9oqQuLPT2F
+      S1ayYnqX17304TaSEaP2sP2NRto7v3P2g33s9/djwEWfYwjJT/yM9HFD8bO4ePtUA5bBYS6P
+      PLa3kuvSUhkZbIH+4UyYnkxz5T5auw+0VVO8PYSZ6TG4uoRcuXrpjh/J/fPvJWvuVO58Lowg
+      Syun/9HCyJ/9kbFuukLr6UZChg5x+d5Xp0O5YYRTyqGjGePzNxqBiG++aeO9DVsJeeA/Ga7q
+      jdNL4UPg2Hm8+nY2Rz6o4NMvr+H6+JuJCnbf85zm5iYqCnM69vi+QVx/y0+Y9XAiEZYznDnj
+      j3+XXU0/LPVfUE9n+BVryakAv/G5rHRRvd1u/5ZrNrtt/t7gSlvPhXRfa6+FD4BvMFHWyUT1
+      wqnDkheSn9zxtaP1FIffXM/vXgtjWXo0Awa00NIKfBP/1zjCBxN+/mX8HPKzoylfs4xXD91I
+      RkzX+AMCAnpcz263ExQU1Asr8ZwrbT0X0n2tbgz/IzYvf40DFxwzhvsXpTHKfRcFwOI3kNH3
+      TCZyxTFOEs3VIY18eNRBQmxn0I0HOdA+kMldjgok4eEH+fvKQqoXZBMX6OLEcsXqo//nto43
+      X3yZys9ttAG0nebgpq0cHxNDGDA8cRzHN5dwuMkBbfWUFZcSNO5WejzTCYwj65HBbF1fju17
+      X4N4khvv+KNIW7SINLedr/tz+oqOr+PnkJ8dx6RpMRQXLOEPnzZz1uLPtQmZPJ5xXcfQIck8
+      mlTI6kW5NDj8iZ4ylzkuHmUCWCJSyLphJWu2RbIgJUJPdwzx/6vjNjv98/EcAAAAAElFTkSu
+      QmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>

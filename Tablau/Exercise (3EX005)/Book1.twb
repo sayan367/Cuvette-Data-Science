@@ -1,0 +1,1105 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Customer Data+ (Bf0i3hXTpGPXiTICRbJw_Exercise 5)' inline='true' name='federated.0jjh5r7009lwuh15pmzdn0q28b91' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Bf0i3hXTpGPXiTICRbJw_Exercise 5' name='excel-direct.1pvh1wx1798ip219fq51a1sd5gdu'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='E:/Cuvette Data Science Program/Cuvette/Tablau/Exercise (3EX005)/Bf0i3hXTpGPXiTICRbJw_Exercise 5.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='excel-direct.1pvh1wx1798ip219fq51a1sd5gdu' name='Customer Data' table='[&apos;Customer Data$&apos;]' type='table'>
+            <columns gridOrigin='A1:I794:no:A1:I794:0' header='yes' outcome='6'>
+              <column datatype='string' name='Customer ID' ordinal='0' />
+              <column datatype='string' name='Customer Name' ordinal='1' />
+              <column datatype='string' name='Marital Status' ordinal='2' />
+              <column datatype='integer' name='Age' ordinal='3' />
+              <column datatype='integer' name='Number of dependents' ordinal='4' />
+              <column datatype='string' name='Home City' ordinal='5' />
+              <column datatype='string' name='Home State' ordinal='6' />
+              <column datatype='integer' name='Postal Code' ordinal='7' />
+              <column datatype='string' name='Risk Level' ordinal='8' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1pvh1wx1798ip219fq51a1sd5gdu' name='Loan Transaction Data' table='[&apos;Loan Transaction Data$&apos;]' type='table'>
+            <columns gridOrigin='A1:J789:no:A1:J789:0' header='yes' outcome='6'>
+              <column datatype='integer' name='Transaction ID' ordinal='0' />
+              <column datatype='date' name='Application Date' ordinal='1' />
+              <column datatype='date' name='Approval date' ordinal='2' />
+              <column datatype='string' name='Type of Loan' ordinal='3' />
+              <column datatype='string' name='Customer ID' ordinal='4' />
+              <column datatype='string' name='Branch ID' ordinal='5' />
+              <column datatype='integer' name='Loan Amount' ordinal='6' />
+              <column datatype='integer' name='Term of Loan' ordinal='7' />
+              <column datatype='real' name='Interest rate' ordinal='8' />
+              <column datatype='string' name='Lead source' ordinal='9' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[Age]' value='[Customer Data].[Age]' />
+          <map key='[Application Date]' value='[Loan Transaction Data].[Application Date]' />
+          <map key='[Approval date]' value='[Loan Transaction Data].[Approval date]' />
+          <map key='[Branch ID]' value='[Loan Transaction Data].[Branch ID]' />
+          <map key='[Customer ID (Loan Transaction Data)]' value='[Loan Transaction Data].[Customer ID]' />
+          <map key='[Customer ID]' value='[Customer Data].[Customer ID]' />
+          <map key='[Customer Name]' value='[Customer Data].[Customer Name]' />
+          <map key='[Home City]' value='[Customer Data].[Home City]' />
+          <map key='[Home State]' value='[Customer Data].[Home State]' />
+          <map key='[Interest rate]' value='[Loan Transaction Data].[Interest rate]' />
+          <map key='[Lead source]' value='[Loan Transaction Data].[Lead source]' />
+          <map key='[Loan Amount]' value='[Loan Transaction Data].[Loan Amount]' />
+          <map key='[Marital Status]' value='[Customer Data].[Marital Status]' />
+          <map key='[Number of dependents]' value='[Customer Data].[Number of dependents]' />
+          <map key='[Postal Code]' value='[Customer Data].[Postal Code]' />
+          <map key='[Risk Level]' value='[Customer Data].[Risk Level]' />
+          <map key='[Term of Loan]' value='[Loan Transaction Data].[Term of Loan]' />
+          <map key='[Transaction ID]' value='[Loan Transaction Data].[Transaction ID]' />
+          <map key='[Type of Loan]' value='[Loan Transaction Data].[Type of Loan]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Customer Data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:I794:no:A1:I794:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Loan Transaction Data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:J789:no:A1:J789:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer ID]</local-name>
+            <parent-name>[Customer Data]</parent-name>
+            <remote-alias>Customer ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer Name]</local-name>
+            <parent-name>[Customer Data]</parent-name>
+            <remote-alias>Customer Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Marital Status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Marital Status]</local-name>
+            <parent-name>[Customer Data]</parent-name>
+            <remote-alias>Marital Status</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Customer Data]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of dependents</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of dependents]</local-name>
+            <parent-name>[Customer Data]</parent-name>
+            <remote-alias>Number of dependents</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Home City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Home City]</local-name>
+            <parent-name>[Customer Data]</parent-name>
+            <remote-alias>Home City</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Home State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Home State]</local-name>
+            <parent-name>[Customer Data]</parent-name>
+            <remote-alias>Home State</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Postal Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Postal Code]</local-name>
+            <parent-name>[Customer Data]</parent-name>
+            <remote-alias>Postal Code</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Risk Level</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Risk Level]</local-name>
+            <parent-name>[Customer Data]</parent-name>
+            <remote-alias>Risk Level</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transaction ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Transaction ID]</local-name>
+            <parent-name>[Loan Transaction Data]</parent-name>
+            <remote-alias>Transaction ID</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Application Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Application Date]</local-name>
+            <parent-name>[Loan Transaction Data]</parent-name>
+            <remote-alias>Application Date</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Approval date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Approval date]</local-name>
+            <parent-name>[Loan Transaction Data]</parent-name>
+            <remote-alias>Approval date</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type of Loan</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Type of Loan]</local-name>
+            <parent-name>[Loan Transaction Data]</parent-name>
+            <remote-alias>Type of Loan</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer ID (Loan Transaction Data)]</local-name>
+            <parent-name>[Loan Transaction Data]</parent-name>
+            <remote-alias>Customer ID</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Branch ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Branch ID]</local-name>
+            <parent-name>[Loan Transaction Data]</parent-name>
+            <remote-alias>Branch ID</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Loan Amount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Loan Amount]</local-name>
+            <parent-name>[Loan Transaction Data]</parent-name>
+            <remote-alias>Loan Amount</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Term of Loan</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Term of Loan]</local-name>
+            <parent-name>[Loan Transaction Data]</parent-name>
+            <remote-alias>Term of Loan</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interest rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Interest rate]</local-name>
+            <parent-name>[Loan Transaction Data]</parent-name>
+            <remote-alias>Interest rate</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lead source</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Lead source]</local-name>
+            <parent-name>[Loan Transaction Data]</parent-name>
+            <remote-alias>Lead source</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Home City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Home State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Postal Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column datatype='integer' name='[Transaction ID]' role='dimension' type='ordinal' />
+      <column caption='Customer Data' datatype='table' name='[__tableau_internal_object_id__].[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]' role='measure' type='quantitative' />
+      <column caption='Loan Transaction Data' datatype='table' name='[__tableau_internal_object_id__].[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/personal/AppData/Local/Temp/TableauTemp/#TableauTemp_0yj7org0r6zee917d7o620ztxvh4.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/14/2025 08:25:14 AM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='Customer Data_DF1FC5DD28EF49E6905F9022B258CB96' table='[Extract].[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]' type='table' />
+            <relation name='Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F' table='[Extract].[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]' type='table' />
+          </relation>
+          <cols>
+            <map key='[Age]' value='[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96].[Age]' />
+            <map key='[Application Date]' value='[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F].[Application Date]' />
+            <map key='[Approval date]' value='[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F].[Approval date]' />
+            <map key='[Branch ID]' value='[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F].[Branch ID]' />
+            <map key='[Customer ID (Loan Transaction Data)]' value='[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F].[Customer ID]' />
+            <map key='[Customer ID]' value='[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96].[Customer ID]' />
+            <map key='[Customer Name]' value='[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96].[Customer Name]' />
+            <map key='[Home City]' value='[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96].[Home City]' />
+            <map key='[Home State]' value='[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96].[Home State]' />
+            <map key='[Interest rate]' value='[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F].[Interest rate]' />
+            <map key='[Lead source]' value='[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F].[Lead source]' />
+            <map key='[Loan Amount]' value='[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F].[Loan Amount]' />
+            <map key='[Marital Status]' value='[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96].[Marital Status]' />
+            <map key='[Number of dependents]' value='[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96].[Number of dependents]' />
+            <map key='[Postal Code]' value='[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96].[Postal Code]' />
+            <map key='[Risk Level]' value='[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96].[Risk Level]' />
+            <map key='[Term of Loan]' value='[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F].[Term of Loan]' />
+            <map key='[Transaction ID]' value='[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F].[Transaction ID]' />
+            <map key='[Type of Loan]' value='[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F].[Type of Loan]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Customer ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer ID]</local-name>
+              <parent-name>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</parent-name>
+              <remote-alias>Customer ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Customer Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>793</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer Name]</local-name>
+              <parent-name>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</parent-name>
+              <remote-alias>Customer Name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Customer Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>793</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Marital Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Marital Status]</local-name>
+              <parent-name>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</parent-name>
+              <remote-alias>Marital Status</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Customer Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Customer Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>53</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of dependents</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number of dependents]</local-name>
+              <parent-name>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</parent-name>
+              <remote-alias>Number of dependents</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Customer Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Home City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Home City]</local-name>
+              <parent-name>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</parent-name>
+              <remote-alias>Home City</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Customer Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>252</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Home State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Home State]</local-name>
+              <parent-name>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</parent-name>
+              <remote-alias>Home State</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Customer Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Postal Code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Postal Code]</local-name>
+              <parent-name>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</parent-name>
+              <remote-alias>Postal Code</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Customer Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>314</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Risk Level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Risk Level]</local-name>
+              <parent-name>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</parent-name>
+              <remote-alias>Risk Level</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Customer Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Transaction ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Transaction ID]</local-name>
+              <parent-name>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</parent-name>
+              <remote-alias>Transaction ID</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Loan Transaction Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>788</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Application Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Application Date]</local-name>
+              <parent-name>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</parent-name>
+              <remote-alias>Application Date</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Loan Transaction Data</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>549</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Approval date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Approval date]</local-name>
+              <parent-name>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</parent-name>
+              <remote-alias>Approval date</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Loan Transaction Data</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>568</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Type of Loan</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Type of Loan]</local-name>
+              <parent-name>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</parent-name>
+              <remote-alias>Type of Loan</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Loan Transaction Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer ID (Loan Transaction Data)]</local-name>
+              <parent-name>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</parent-name>
+              <remote-alias>Customer ID</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Loan Transaction Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>788</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Branch ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Branch ID]</local-name>
+              <parent-name>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</parent-name>
+              <remote-alias>Branch ID</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Loan Transaction Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>638</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Loan Amount</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Loan Amount]</local-name>
+              <parent-name>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</parent-name>
+              <remote-alias>Loan Amount</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Loan Transaction Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>786</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Term of Loan</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Term of Loan]</local-name>
+              <parent-name>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</parent-name>
+              <remote-alias>Term of Loan</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Loan Transaction Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Interest rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Interest rate]</local-name>
+              <parent-name>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</parent-name>
+              <remote-alias>Interest rate</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Loan Transaction Data</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>157</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lead source</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Lead source]</local-name>
+              <parent-name>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</parent-name>
+              <remote-alias>Lead source</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Loan Transaction Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Customer Data' id='Customer Data_DF1FC5DD28EF49E6905F9022B258CB96'>
+            <properties context=''>
+              <relation connection='excel-direct.1pvh1wx1798ip219fq51a1sd5gdu' name='Customer Data' table='[&apos;Customer Data$&apos;]' type='table'>
+                <columns gridOrigin='A1:I794:no:A1:I794:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Customer ID' ordinal='0' />
+                  <column datatype='string' name='Customer Name' ordinal='1' />
+                  <column datatype='string' name='Marital Status' ordinal='2' />
+                  <column datatype='integer' name='Age' ordinal='3' />
+                  <column datatype='integer' name='Number of dependents' ordinal='4' />
+                  <column datatype='string' name='Home City' ordinal='5' />
+                  <column datatype='string' name='Home State' ordinal='6' />
+                  <column datatype='integer' name='Postal Code' ordinal='7' />
+                  <column datatype='string' name='Risk Level' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Customer Data_DF1FC5DD28EF49E6905F9022B258CB96' table='[Extract].[Customer Data_DF1FC5DD28EF49E6905F9022B258CB96]' type='table' />
+            </properties>
+          </object>
+          <object caption='Loan Transaction Data' id='Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F'>
+            <properties context=''>
+              <relation connection='excel-direct.1pvh1wx1798ip219fq51a1sd5gdu' name='Loan Transaction Data' table='[&apos;Loan Transaction Data$&apos;]' type='table'>
+                <columns gridOrigin='A1:J789:no:A1:J789:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Transaction ID' ordinal='0' />
+                  <column datatype='date' name='Application Date' ordinal='1' />
+                  <column datatype='date' name='Approval date' ordinal='2' />
+                  <column datatype='string' name='Type of Loan' ordinal='3' />
+                  <column datatype='string' name='Customer ID' ordinal='4' />
+                  <column datatype='string' name='Branch ID' ordinal='5' />
+                  <column datatype='integer' name='Loan Amount' ordinal='6' />
+                  <column datatype='integer' name='Term of Loan' ordinal='7' />
+                  <column datatype='real' name='Interest rate' ordinal='8' />
+                  <column datatype='string' name='Lead source' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F' table='[Extract].[Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Customer ID]' />
+              <expression op='[Customer ID (Loan Transaction Data)]' />
+            </expression>
+            <first-end-point object-id='Customer Data_DF1FC5DD28EF49E6905F9022B258CB96' />
+            <second-end-point object-id='Loan Transaction Data_7057F35B87EE4D1FA39D45FABD2F1D3F' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Loan Amount by Home State and City</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Customer Data+ (Bf0i3hXTpGPXiTICRbJw_Exercise 5)' name='federated.0jjh5r7009lwuh15pmzdn0q28b91' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jjh5r7009lwuh15pmzdn0q28b91'>
+            <column datatype='string' name='[Home City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='string' name='[Home State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='integer' name='[Loan Amount]' role='measure' type='quantitative' />
+            <column-instance column='[Home City]' derivation='None' name='[none:Home City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Home State]' derivation='None' name='[none:Home State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Loan Amount]' derivation='Sum' name='[pcto:sum:Loan Amount:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Loan Amount]' derivation='Sum' name='[sum:Loan Amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0jjh5r7009lwuh15pmzdn0q28b91].[sum:Loan Amount:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.0jjh5r7009lwuh15pmzdn0q28b91].[sum:Loan Amount:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0jjh5r7009lwuh15pmzdn0q28b91].[sum:Loan Amount:qk]' palette='green_blue_white_diverging_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.0jjh5r7009lwuh15pmzdn0q28b91].[pcto:sum:Loan Amount:qk]' palette='green_blue_white_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0jjh5r7009lwuh15pmzdn0q28b91].[sum:Loan Amount:qk]' />
+              <color column='[federated.0jjh5r7009lwuh15pmzdn0q28b91].[pcto:sum:Loan Amount:qk]' />
+              <text column='[federated.0jjh5r7009lwuh15pmzdn0q28b91].[none:Home State:nk]' />
+              <text column='[federated.0jjh5r7009lwuh15pmzdn0q28b91].[none:Home City:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C7DF1ACD-3525-4BC9-941A-59D1E110FDF3}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0jjh5r7009lwuh15pmzdn0q28b91].[pcto:sum:Loan Amount:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0jjh5r7009lwuh15pmzdn0q28b91].[none:Home City:nk]</field>
+            <field>[federated.0jjh5r7009lwuh15pmzdn0q28b91].[none:Home State:nk]</field>
+            <field>[federated.0jjh5r7009lwuh15pmzdn0q28b91].[pcto:sum:Loan Amount:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AC1D62D8-33B4-4BF9-87E8-29E9E1434AAA}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

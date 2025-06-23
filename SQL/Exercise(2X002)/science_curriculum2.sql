@@ -1,0 +1,5 @@
+SELECT * FROM SCIENCE_CURRICULUM;
+copy Science_curriculum (ENROLLMENT_ID, NAME, MARKS)
+FROM 'E:/Cuvette/SQL/Exercise(2X002)/Students.csv'
+DELIMITER ','
+CSV HEADER;
